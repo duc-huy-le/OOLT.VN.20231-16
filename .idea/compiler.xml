@@ -9,5 +9,9 @@
         <module name="MiniProjectOOP" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MiniProjectOOP (1)" target="21" />
+      <module name="MiniProjectOOP (2)" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
