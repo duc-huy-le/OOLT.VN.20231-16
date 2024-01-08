@@ -1,13 +1,13 @@
 package test;
 
-import java.util.Scanner;
-
 import exception.InvalidInputException;
 import force.ChangeableForce;
 import objects.ActedObject;
 import objects.Cube;
 import objects.Cylinder;
 import objects.Surface;
+
+import java.util.Scanner;
 
 public class TestMotion {
 
