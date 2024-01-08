@@ -1,12 +1,7 @@
-package main;
-
-import force.ChangeableForce;
-import objects.*;
-
-import java.net.URL;
-import java.util.ResourceBundle;
+package Application;
 
 import exception.InvalidInputException;
+import force.ChangeableForce;
 import javafx.animation.AnimationTimer;
 import javafx.beans.property.LongProperty;
 import javafx.beans.property.SimpleLongProperty;
@@ -17,18 +12,8 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
-import javafx.scene.control.Button;
+import javafx.scene.control.*;
 import javafx.scene.control.ButtonBar.ButtonData;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.Dialog;
-import javafx.scene.control.DialogPane;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.Slider;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -39,9 +24,13 @@ import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.shape.SVGPath;
-import javafx.scene.transform.Scale;
 import javafx.util.Callback;
+
+import java.net.URL;
+import java.util.Objects;
+import java.util.ResourceBundle;
+
+import objects.*;
 
 public class MyController implements Initializable {
 
@@ -554,7 +543,7 @@ public class MyController implements Initializable {
 		dialog.setTitle("Input object information");
 
 		DialogPane pane = dialog.getDialogPane();
-		pane.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		pane.getStylesheets().add(Objects.requireNonNull(getClass().getResource("application.css")).toExternalForm());
 		pane.getStyleClass().add("inputDialog");
 
 		Label labelMass = new Label("Mass (kg): ");

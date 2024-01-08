@@ -1,7 +1,8 @@
 package objects;
 
 import exception.InvalidInputException;
-import force.*;
+import force.ChangeableForce;
+import force.NonChangeableForce;
 
 public abstract class ActedObject {
 

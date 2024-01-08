@@ -1,9 +1,7 @@
 package objects;
 
-import force.*;
-import java.lang.Math;
-
 import exception.InvalidInputException;
+import force.ChangeableForce;
 
 public class Cube extends ActedObject {
 	private double sideLength;
